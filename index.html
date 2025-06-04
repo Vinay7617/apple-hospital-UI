@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .hospital-layout {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      font-family: Arial, sans-serif;
+    }
+
+    .left-panel, .right-panel {
+      flex: 1;
+      min-width: 250px;
+      padding: 10px;
+    }
+
+    .center-panel {
+      flex: 2;
+      padding: 10px;
+      min-width: 300px;
+    }
+
+    .tile, .btn-tile {
+      background-color: #f5f5f5;
+      border-radius: 12px;
+      padding: 15px;
+      margin: 10px 0;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn-tile {
+      background-color: #005B7F;
+      color: white;
+      justify-content: space-between;
+    }
+
+    .tile:hover, .btn-tile:hover {
+      transform: scale(1.02);
+    }
+
+    .about-hospital h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .about-hospital p {
+      font-size: 15px;
+      color: #555;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+<div class="hospital-layout">
+  <div class="left-panel">
+    <div class="tile">🩺 Professional Staff</div>
+    <div class="tile">🚑 Emergency Treatment</div>
+    <div class="tile">👨‍⚕️ Trusted Doctors</div>
+    <div class="tile">🕒 24/7 Services</div>
+  </div>
+
+  <div class="center-panel about-hospital">
+    <h2>About APPLE Hospital</h2>
+    <p>
+      Apple Hospital is a world-class facility combining technology with expert doctors to deliver care at affordable prices.
+      Our mission is to make quality healthcare accessible for everyone.
+    </p>
+  </div>
+
+  <div class="right-panel">
+    <div class="btn-tile">📅 Sample Collection</div>
+    <div class="btn-tile">👨‍⚕️ Find Doctors</div>
+    <div class="btn-tile">📍 Find Locations</div>
+    <div class="btn-tile">📝 Book a Health Checkup</div>
+  </div>
+</div>
+
+</body>
+</html>
